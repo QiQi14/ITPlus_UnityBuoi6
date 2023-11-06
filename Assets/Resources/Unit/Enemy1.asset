@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd9b7980e9c456f4da54bf00919359a0, type: 3}
-  m_Name: EnemyStat
+  m_Script: {fileID: 11500000, guid: 493cc8d82cb32a0449bc26b7a81de054, type: 3}
+  m_Name: Enemy1
   m_EditorClassIdentifier: 
-  HP: 50
-  Damage: 5
+  faction: 0
+  unitPrefab: {fileID: 6539442433456226356, guid: 1c078722c75d9d14594484db9af4a9c7, type: 3}

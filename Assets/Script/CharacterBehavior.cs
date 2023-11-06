@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class CharacterBehavior : MonoBehaviour
 {
     [SerializeField]
-    private CharacterStat characterStat;
+    public CharacterStat characterStat;
 
     [SerializeField]
     private Transform hpBar;
@@ -16,14 +16,16 @@ public class CharacterBehavior : MonoBehaviour
 
     public float currentHP;
 
-    private void Start()
+    public void Init()
     {
         hpScale = hpBar.localScale;
+        Debug.Log("hpBar.localScale " + hpBar.localScale);
         currentHP = characterStat.HP;
     }
 
     public void ReceiveDamage(float damage)
     {
+        Debug.Log("received Damage " + damage);
         float estimateHP = currentHP - damage;
         if (estimateHP <= 0)
         {

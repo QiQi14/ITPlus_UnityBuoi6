@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         UpdateGameState(GameState.Menu);
+        AudioManager.instance.PlayBGM("BGM1");
     }
 
     public void UpdateGameState(GameState newState)
@@ -33,6 +34,10 @@ public class GameManager : MonoBehaviour
 
 public enum GameState {
     Menu,
+    GenerateMap,
+    SpawnUnit,
     PlayerTurn,
-    EnemyTurn
+    EnemyTurn,
+    Victory,
+    Defeat
 }

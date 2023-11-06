@@ -33,4 +33,9 @@ public class AudioManager : MonoBehaviour
             musicSource.Play();
         }
     }
+
+    public void BGMVolume(float value)
+    {
+        musicSource.volume = value;
+    }
 }
